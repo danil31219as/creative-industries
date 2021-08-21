@@ -5,6 +5,7 @@ from pymystem3 import Mystem
 from nltk.corpus import stopwords
 import gensim
 
+nltk.download("stopwords")
 stopwords_ru = stopwords.words("russian") + json.loads(open("stopwords-ru.json").read())
 morph = MorphAnalyzer()
 patterns = '[0-9!a-z#$%&A-Z"()*+,./:;<=>?-@[\]^_`{|}~—\"\-]+'
@@ -74,7 +75,3 @@ def preprocess_pymystem3(path):
             if len(result) != 0:
                 outputdata[list(inputdata.keys())[i]].append(result)
     return outputdata
-
-
-with open('data.json', 'w') as f:
-    json.dump(preprocess_pymorphy2("dataset_public.json"), f, ensure_ascii=False)
