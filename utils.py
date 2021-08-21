@@ -31,7 +31,7 @@ def lemmatize(doc, patterns, morph):
     for token in doc.split():
         if token:
             token = token.strip()
-            doc = morph.normal_forms(doc)[0]
+            token = morph.normal_forms(token)[0]
             tokens.append(token)
     return " ".join(tokens)
 
