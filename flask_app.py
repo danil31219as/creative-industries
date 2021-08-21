@@ -19,13 +19,7 @@ def index():
 def getNews():
     with open('now.json', encoding='utf-8') as file:
         json = load(file)
-    
-
-    res = []
-    for i in json:
-        for article in i['news']:
-            res.append(article['headline'])
-    return jsonify(res)
+    return jsonify(json['news'])
 
 
 @application.route('/api/getName')

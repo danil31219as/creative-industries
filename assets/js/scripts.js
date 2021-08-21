@@ -35,7 +35,8 @@ function see_res(name){
     $('#res').css({'display': 'inline-flex'});
     
     $('#tags').animate({opacity: 0}, 500);
-    $('#tags').css({display: 'none!important'});
+    $('#tags').css({'display': 'none', 'z-index': '-1'});
+    console.log($('#tags').css('display'));
     
     $('#info-card').css({animation: 'info-card 1s reverse', 'animation-fill-mode': 'forwards'})
 }
