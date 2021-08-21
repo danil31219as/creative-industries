@@ -4,6 +4,7 @@ from pymorphy2 import MorphAnalyzer
 from pymystem3 import Mystem
 from nltk.corpus import stopwords
 import gensim
+import nltk
 
 nltk.download("stopwords")
 stopwords_ru = stopwords.words("russian") + json.loads(open("stopwords-ru.json").read())
