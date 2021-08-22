@@ -21,7 +21,7 @@ Finally
 pip install simpletransformers
 ```
 
-Inference [model](https://drive.google.com/file/d/1-2FK_LDNew7WBymhCrx_mahx_cRodDo5/view?usp=sharing)
+Inference [model](https://drive.google.com/file/d/1bPdK13kKiV4RYt8cXwgYGb3dFx46SVjn/view?usp=sharing)
 
 ```
 python inference.py --path <path to your json with article>
