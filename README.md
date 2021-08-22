@@ -5,15 +5,9 @@ Install requirements
 ```
 pip install tqdm pandas gensim nltk pymorphy2 pymystem3
 ```
-
-Using CUDA
-```
-pip install pytorch>=1.6 cudatoolkit=11.0 -c pytorch
-```
-
 CPU only
 ```
-pip install pytorch cpuonly -c pytorch
+pip install torch
 ```
 
 Finally
